@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theophelos Madzinga - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-mona-sans bg-black text-white">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top py-3" style="background-color: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px);">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold gradient-text" href="#">Theophelos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-vh-100 d-flex align-items-center position-relative overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="mb-4">
+                        <span class="badge bg-dark text-white px-3 py-2">Full Stack Developer</span>
+                    </div>
+                    <h1 class="hero-text fw-bold mb-4">
+                        Hi, I'm <span class="gradient-text">Theophelos Madzinga</span>
+                    </h1>
+                    <p class="lead mb-4" style="color: #839cb5;">
+                        A Computer Science student based in Zimbabwe, passionate about creating beautiful and functional web applications.
+                    </p>
+                    <div class="d-flex gap-3 mt-5 justify-content-center">
+                        <a href="#projects" class="btn btn-lg px-4 py-3" style="background: linear-gradient(90deg, #62e0ff, #6d45ce); border: none;">View My Work</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg px-4 py-3">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute bottom-0 start-0 w-100 text-center mb-4">
+            <a href="#about" class="text-white text-decoration-none">
+                <i class="fas fa-chevron-down fs-4"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 my-5">
+        <div class="container py-5">
+            <h2 class="section-title fw-bold mb-5">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="code-block">
+                        <pre><code class="text-white">
+<span class="text-blue-300">const</span> theophelos = {
+    name: <span class="text-green-300">"Theophelos Madzinga"</span>,
+    role: <span class="text-green-300">"Full Stack Developer"</span>,
+    location: <span class="text-green-300">"Zimbabwe"</span>,
+    education: <span class="text-green-300">"Computer Science Student"</span>,
+    skills: [
+        <span class="text-green-300">"JavaScript"</span>,
+        <span class="text-green-300">"React"</span>,
+        <span class="text-green-300">"Node.js"</span>,
+        <span class="text-green-300">"MongoDB"</span>,
+        <span class="text-green-300">"Tailwind CSS"</span>
+    ],
+    hobbies: [
+        <span class="text-green-300">"Coding"</span>,
+        <span class="text-green-300">"Open Source"</span>,
+        <span class="text-green-300">"Learning New Tech"</span>
+    ]
+};</code></pre>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-4">Who am I?</h3>
+                    <p class="mb-4" style="color: #839cb5;">
+                        I'm Theophelos Madzinga, a passionate Computer Science student from Zimbabwe with a strong focus on full-stack web development. I love turning complex problems into simple, beautiful, and intuitive solutions.
+                    </p>
+                    <p class="mb-4" style="color: #839cb5;">
+                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying the outdoors. I believe in continuous learning and pushing the boundaries of what's possible with code.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="me-3">
+                                    <i class="fas fa-graduation-cap gradient-text fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0 fw-bold">Education</h5>
+                                    <p class="mb-0" style="color: #839cb5;">Computer Science Student</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="me-3">
+                                    <i class="fas fa-map-marker-alt gradient-text fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0 fw-bold">Location</h5>
+                                    <p class="mb-0" style="color: #839cb5;">Zimbabwe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="me-3">
+                                    <i class="fas fa-code gradient-text fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0 fw-bold">Specialization</h5>
+                                    <p class="mb-0" style="color: #839cb5;">Full Stack Development</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="me-3">
+                                    <i class="fas fa-project-diagram gradient-text fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0 fw-bold">Projects</h5>
+                                    <p class="mb-0" style="color: #839cb5;">10+ Completed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Marquee -->
+    <div class="py-4" style="background-color: #0e0e10;">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span class="mx-4 fs-4 fw-bold">HTML5</span>
+                <span class="mx-4 fs-4 fw-bold">CSS3</span>
+                <span class="mx-4 fs-4 fw-bold">JavaScript</span>
+                <span class="mx-4 fs-4 fw-bold">React</span>
+                <span class="mx-4 fs-4 fw-bold">Node.js</span>
+                <span class="mx-4 fs-4 fw-bold">Express</span>
+                <span class="mx-4 fs-4 fw-bold">MongoDB</span>
+                <span class="mx-4 fs-4 fw-bold">Tailwind CSS</span>
+                <span class="mx-4 fs-4 fw-bold">Bootstrap</span>
+                <span class="mx-4 fs-4 fw-bold">GSAP</span>
+                <span class="mx-4 fs-4 fw-bold">Git</span>
+                <span class="mx-4 fs-4 fw-bold">Responsive Design</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 my-5">
+        <div class="container py-5">
+            <h2 class="section-title fw-bold mb-5">My Projects</h2>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card h-100 card-hover-effect">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="fw-bold mb-0">E-commerce Platform</h4>
+                                <div>
+                                    <span class="badge bg-dark me-2">React</span>
+                                    <span class="badge bg-dark">Node.js</span>
+                                </div>
+                            </div>
+                            <p style="color: #839cb5;">A full-featured e-commerce platform with product listings, cart functionality, and secure checkout.</p>
+                            <div class="d-flex justify-content-between mt-4">
+                                <a href="#" class="text-decoration-none gradient-text fw-bold">View Project</a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fab fa-github gradient-text fs-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card h-100 card-hover-effect">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="fw-bold mb-0">Task Management App</h4>
+                                <div>
+                                    <span class="badge bg-dark me-2">Vue.js</span>
+                                    <span class="badge bg-dark">Firebase</span>
+                                </div>
+                            </div>
+                            <p style="color: #839cb5;">A collaborative task management application with real-time updates and team functionality.</p>
+                            <div class="d-flex justify-content-between mt-4">
+                                <a href="#" class="text-decoration-none gradient-text fw-bold">View Project</a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fab fa-github gradient-text fs-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card h-100 card-hover-effect">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="fw-bold mb-0">Portfolio Website</h4>
+                                <div>
+                                    <span class="badge bg-dark me-2">HTML/CSS</span>
+                                    <span class="badge bg-dark">JavaScript</span>
+                                </div>
+                            </div>
+                            <p style="color: #839cb5;">A responsive portfolio website showcasing my skills, projects, and contact information.</p>
+                            <div class="d-flex justify-content-between mt-4">
+                                <a href="#" class="text-decoration-none gradient-text fw-bold">View Project</a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fab fa-github gradient-text fs-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-lg px-4 py-3" style="background: linear-gradient(90deg, #62e0ff, #6d45ce); border: none;">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 my-5" style="background-color: #0e0e10;">
+        <div class="container py-5">
+            <h2 class="section-title fw-bold mb-5">My Skills</h2>
+            <div class="row g-4">
+                <!-- Frontend Skills -->
+                <div class="col-md-6">
+                    <div class="p-4 rounded-4 h-100" style="background-color: #1c1c21;">
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fas fa-laptop-code gradient-text fs-3 me-3"></i>
+                            <h3 class="fw-bold mb-0">Frontend Development</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>HTML5</span>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>CSS3</span>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>React</span>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>Vue.js</span>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>Tailwind CSS</span>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>Bootstrap</span>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>GSAP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend Skills -->
+                <div class="col-md-6">
+                    <div class="p-4 rounded-4 h-100" style="background-color: #1c1c21;">
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fas fa-server gradient-text fs-3 me-3"></i>
+                            <h3 class="fw-bold mb-0">Backend Development</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>Node.js</span>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>Express</span>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>MongoDB</span>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>Firebase</span>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>REST APIs</span>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>GraphQL</span>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>Python</span>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>Django</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools -->
+                <div class="col-12 mt-4">
+                    <div class="p-4 rounded-4" style="background-color: #1c1c21;">
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fas fa-tools gradient-text fs-3 me-3"></i>
+                            <h3 class="fw-bold mb-0">Tools & Other Skills</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-md-4 col-lg-2 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>Git</span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>GitHub</span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>VS Code</span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>Figma</span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>Postman</span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="timeline-dot me-3"></div>
+                                    <span>Docker</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 my-5">
+        <div class="container py-5">
+            <h2 class="section-title fw-bold mb-5">Get In Touch</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="p-4 rounded-4 h-100" style="background-color: #0e0e10;">
+                        <h3 class="fw-bold mb-4">Contact Information</h3>
+                        <p class="mb-4" style="color: #839cb5;">Feel free to reach out to me for any questions or opportunities. I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="me-3">
+                                    <i class="fas fa-envelope gradient-text fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0 fw-bold">Email</h5>
+                                    <a href="mailto:theophelosmadzinga@gmail.com" class="text-decoration-none" style="color: #839cb5;">theophelos.madzinga@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="me-3">
+                                    <i class="fas fa-map-marker-alt gradient-text fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0 fw-bold">Location</h5>
+                                    <p class="mb-0" style="color: #839cb5;">Zimbabwe</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-5">
+                            <h5 class="fw-bold mb-3">Follow Me</h5>
+                            <div class="d-flex gap-3">
+                                <a href="https://twitter.com/theo_madzinga" target="_blank" class="text-decoration-none">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background-color: #1c1c21;">
+                                        <i class="fab fa-twitter gradient-text fs-5"></i>
+                                    </div>
+                                </a>
+                                <a href="https://instagram.com/theo_madzinga" target="_blank" class="text-decoration-none">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background-color: #1c1c21;">
+                                        <i class="fab fa-instagram gradient-text fs-5"></i>
+                                    </div>
+                                </a>
+                                <a href="https://github.com/Muna18madzinga" target="_blank" class="text-decoration-none">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background-color: #1c1c21;">
+                                        <i class="fab fa-github gradient-text fs-5"></i>
+                                    </div>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" class="text-decoration-none">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background-color: #1c1c21;">
+                                        <i class="fab fa-linkedin-in gradient-text fs-5"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="p-4 rounded-4" style="background-color: #0e0e10;">
+                        <div class="mb-4">
+                            <label for="name" class="form-label fw-bold">Your Name</label>
+                            <input type="text" class="form-control contact-input" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="form-label fw-bold">Your Email</label>
+                            <input type="email" class="form-control contact-input" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="form-label fw-bold">Subject</label>
+                            <input type="text" class="form-control contact-input" id="subject" placeholder="Enter subject">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label fw-bold">Message</label>
+                            <textarea class="form-control contact-input" id="message" rows="5" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-lg w-100 py-3" style="background: linear-gradient(90deg, #62e0ff, #6d45ce); border: none;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="py-5" style="background-color: #0e0e10;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <p class="mb-0">&copy; 2025 Theophelos Madzinga. All rights reserved.</p>
+                        <a href="https://instagram.com/theo_madzinga" target="_blank" class="text-decoration-none">
+                            <i class="fab fa-instagram gradient-text fs-5"></i>
+                        </a>
+                        <a href="https://github.com/Muna18madzinga" target="_blank" class="text-decoration-none">
+                            <i class="fab fa-github gradient-text fs-5"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="text-decoration-none">
+                            <i class="fab fa-linkedin-in gradient-text fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" class="position-fixed d-flex align-items-center justify-content-center rounded-circle" style="width: 50px; height: 50px; background: linear-gradient(90deg, #62e0ff, #6d45ce); bottom: 20px; right: 20px; z-index: 99; display: none;">
+        <i class="fas fa-arrow-up text-white"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
